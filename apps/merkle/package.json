@@ -14,8 +14,8 @@
     "babel-register": "^6.26.0"
   },
   "devDependencies": {
-    "@graphprotocol/graph-cli": "^0.67.2",
-    "@graphprotocol/graph-ts": "^0.32.0",
+    "@graphprotocol/graph-cli": "^0.71.1",
+    "@graphprotocol/graph-ts": "^0.35.1",
     "@trivago/prettier-plugin-sort-imports": "4.1.0",
     "@typescript-eslint/eslint-plugin": "^5.59.11",
     "@typescript-eslint/parser": "^5.59.11",
@@ -65,6 +65,7 @@
     "deploy-studio:blast-testnet": "CHAIN=blast-testnet yarn setup && NAME=sablier-v2-ms-blast-testnet yarn deploy-studio",
     "deploy-studio:scroll": "CHAIN=scroll yarn setup && NAME=sablier-v2-ms-scroll yarn deploy-studio",
     "deploy-studio:optimism-sepolia": "CHAIN=optimism-sepolia yarn setup && NAME=sablier-v2-ms-optimism-sepolia yarn deploy-studio",
+    "deploy-studio:zksync": "CHAIN=zksync yarn setup && NAME=sablier-v2-ms-zksync yarn deploy-studio",
     "lint-check": "eslint --ignore-path ../../.eslintignore .",
     "lint-fix": "eslint --fix --ignore-path ../../.eslintignore .",
     "prettier-check": "yarn prettier $npm_package_config_flags_prettier --check .",
@@ -85,6 +86,7 @@
     "setup:optimism-sepolia": "yarn clean-generated && CHAIN=optimism-sepolia yarn setup",
     "setup:polygon": "yarn clean-generated && CHAIN=polygon yarn setup",
     "setup:sepolia": "yarn clean-generated && CHAIN=sepolia yarn setup",
+    "setup:zksync": "yarn clean-generated && CHAIN=zksync yarn setup",
     "template": "yarn template-chain && yarn template-subgraph && yarn template-env",
     "template-chain": "tsc $npm_package_config_dir_chains/$CHAIN.ts --outDir $npm_package_config_dir_generated",
     "template-subgraph": "mustache $npm_package_config_dir_generated/$CHAIN.js subgraph.template.yaml > subgraph.yaml",
