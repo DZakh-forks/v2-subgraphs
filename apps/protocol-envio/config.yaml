@@ -13,8 +13,7 @@ contracts:
     events:
       - event: Approval(address indexed owner, address indexed approved, uint256 indexed tokenId)
       - event: ApprovalForAll(address indexed owner, address indexed operator, bool approved)
-      - event:
-          CancelLockupStream(uint256 indexed streamId, address indexed sender, address indexed recipient, uint128
+      - event: CancelLockupStream(uint256 indexed streamId, address indexed sender, address indexed recipient, uint128
           senderAmount, uint128 recipientAmount)
       - event:
           CreateLockupLinearStream(uint256 streamId, address funder, address indexed sender, address indexed recipient,
@@ -47,8 +46,7 @@ contracts:
       - event: RenounceLockupStream(uint256 indexed streamId)
       - event: Transfer(address indexed from, address indexed to, uint256 indexed tokenId)
       - event: TransferAdmin(address indexed oldAdmin, address indexed newAdmin)
-      - event:
-          WithdrawFromLockupStream(uint256 indexed streamId, address indexed to, address indexed asset, uint128 amount)
+      - event: WithdrawFromLockupStream(uint256 indexed streamId, address indexed to, address indexed asset, uint128 amount)
   - name: LockupV22
     handler: src/mappings/index.ts
     events:
@@ -72,8 +70,7 @@ contracts:
       - event: RenounceLockupStream(uint256 indexed streamId)
       - event: Transfer(address indexed from, address indexed to, uint256 indexed tokenId)
       - event: TransferAdmin(address indexed oldAdmin, address indexed newAdmin)
-      - event:
-          WithdrawFromLockupStream(uint256 indexed streamId, address indexed to, address indexed asset, uint128 amount)
+      - event: WithdrawFromLockupStream(uint256 indexed streamId, address indexed to, address indexed asset, uint128 amount)
 networks:
   - id: 42161
     start_block: 107509950
@@ -255,7 +252,7 @@ networks:
           - 0x3e435560fd0a03ddf70694b35b673c25c65abb6c
           - 0x73bb6dd3f5828d60f8b3dbc8798eb10fba2c5636
           - 0x3a1bea13a8c24c0ea2b8fae91e4b2762a59d7af5
- - id: 324
+  - id: 324
     start_block: 32472500
     contracts:
       - name: LockupV21
